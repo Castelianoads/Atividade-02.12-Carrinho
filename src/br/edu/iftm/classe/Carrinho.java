@@ -6,9 +6,12 @@ public class Carrinho {
 
     // Atributos da classe carrinho
     private float valorTotal;
+    private ArrayList<Produto> produtosList; //ArrayList <tipo classe Produto> nome da variavel do arraylist
 
-    // produtosList é um arrayList
-    ArrayList<Produto> produtosList = new ArrayList<Produto>(); 
+    //Construtor
+    public Carrinho() {
+        this.produtosList = new ArrayList<Produto>();
+    }
 
     // entrando parametro: objeto produto da classe Produto
     public void adicionar(Produto produto) { 
